@@ -1,0 +1,28 @@
+{
+  "name": "qingshui-cisheng-temple",
+  "private": true,
+  "version": "0.1.0",
+  "description": "清水慈聖宮純靜態官網",
+  "type": "module",
+  "scripts": {
+    "content:build": "node scripts/build-events.mjs",
+    "predev": "npm run content:build",
+    "dev": "vite --host 127.0.0.1",
+    "prebuild": "npm run content:build",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test scripts/*.test.mjs"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "vite": "^8.3.5"
+  }
+}

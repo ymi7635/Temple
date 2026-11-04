@@ -1,0 +1,11 @@
+node_modules/
+.claude/
+.codex/
+.vercel/
+dist/
+.env
+.env.*
+data/
+uploads/
+public/data/events.json
+*.log

@@ -1,0 +1,51 @@
+/*
+ * 設計變數（design tokens）：全站的顏色、字型、字級、間距都從這裡取用。
+ * 色彩取自觀音意象，並延續現有官網的品牌色。對比度已用 WCAG 公式驗證。
+ */
+:root {
+  /* ── 主色 ── */
+  --c-zizhu: #171411; /* 紫竹：觀音道場紫竹林。深色底、淺底上的內文 */
+  --c-baiyi: #f5f0e7; /* 白衣：白衣大士。偏冷的瓷白，內容區底色 */
+  --c-jingping: #852f2a; /* 淨瓶青：淨瓶青瓷與甘露水色。連結、路線 */
+  --c-bian: #715633; /* 匾額褐：沿用現有官網最常用的顏色。標題 */
+  --c-zhusha: #852f2a; /* 硃砂：印章與香火。只用在主要按鈕 */
+
+  /* ── 衍生色 ── */
+  --c-ink-soft: #6e6357; /* 淺底上的次要文字 */
+  --c-zizhu-deep: #211c17; /* 水面 */
+  --c-baiyi-dim: #d6cbbd; /* 深底上的次要文字 */
+  --c-jingping-pale: #c4a36a; /* 深底上的楊柳、水波、焦點框 */
+  --c-zhusha-deep: #8a2716; /* 主要按鈕滑過、按下 */
+  --c-surface: #fffaf2; /* 提示框、表單底色 */
+  --c-field-border: #988878; /* 輸入框邊線 */
+  --c-rule: rgb(59 47 69 / 0.14); /* 淺底分隔線 */
+  --c-rule-dark: rgb(242 243 239 / 0.22); /* 深底分隔線 */
+
+  /* ── 字型 ── */
+  --font-serif: 'Noto Serif TC', 'Songti TC', 'PMingLiU', serif;
+  --font-sans: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+
+  /* ── 字級：根字級 18px（見 global.css），比例 1.25 ── */
+  --step--1: 0.875rem; /* 約 16px */
+  --step-0: 1rem; /* 18px 內文 */
+  --step-1: 1.25rem; /* 22.5px */
+  --step-2: 1.5625rem; /* 28px */
+  --step-3: 1.953rem; /* 35px */
+  --step-4: 2.441rem; /* 44px */
+
+  /* ── 間距 ── */
+  --s-1: 0.5rem;
+  --s-2: 1rem;
+  --s-3: 1.5rem;
+  --s-4: 2rem;
+  --s-5: 3rem;
+  --s-6: 4.5rem;
+  --s-7: 6rem;
+
+  /* ── 版面 ── */
+  --header-h: 3.75rem;
+  --page-max: 66rem;
+  --text-max: 34rem; /* 約 34 個中文字一行 */
+  --gutter: clamp(1.125rem, 4vw, 2rem);
+  --radius: 4px;
+}

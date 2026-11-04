@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "id": "seed-115-birthday",
+      "title": "觀音佛祖暨九天玄女娘娘聖誕祝壽",
+      "date": "2026-03-28",
+      "lunarDate": "二月初十",
+      "category": "birthday",
+      "schedule": [
+        {
+          "time": "17:00",
+          "text": "犒軍、平安餐結緣"
+        },
+        {
+          "time": "20:00",
+          "text": "祝壽大典正式開始"
+        }
+      ],
+      "stops": [],
+      "description": "誠摯邀請各位大德蒞臨參香，共沐神恩。",
+      "notice": "",
+      "poster": "",
+      "showRegistration": false,
+      "published": false,
+      "createdAt": "2026-11-04T00:00:00.000Z",
+      "updatedAt": "2026-11-04T00:00:00.000Z"
+    },
+    {
+      "id": "seed-115-pilgrimage",
+      "title": "丙午年．南巡參香",
+      "date": "2026-04-25",
+      "lunarDate": "三月初九",
+      "category": "pilgrimage",
+      "schedule": [
+        {
+          "time": "06:30",
+          "text": "集合"
+        },
+        {
+          "time": "07:00",
+          "text": "出發"
+        }
+      ],
+      "stops": [
+        "台中清水 紫雲巖",
+        "嘉義觸口 龍隱寺",
+        "半天岩 紫雲寺"
+      ],
+      "description": "",
+      "notice": "不開放隨行小車，請統一搭乘本宮遊覽車。",
+      "poster": "",
+      "showRegistration": true,
+      "published": false,
+      "createdAt": "2026-11-04T00:00:00.000Z",
+      "updatedAt": "2026-11-04T00:00:00.000Z"
+    }
+  ]
+}
