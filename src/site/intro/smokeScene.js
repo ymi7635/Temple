@@ -23,7 +23,7 @@ export function createSmoke(canvas, onFailure) {
         float ribbon=exp(-pow(x/width,2.)*2.6);
         float veil=smoothstep(.23,.7,n)*ribbon;
         float fade=smoothstep(0.,.09,y)*(1.-smoothstep(.55,1.,y));
-        gl_FragColor=vec4(vec3(.76,.72,.65),veil*fade*.52);
+        gl_FragColor=vec4(vec3(.74,.80,.86),veil*fade*.52);
       }` })
   scene.add(new THREE.Mesh(geometry,material))
   const resize = () => { const w=canvas.clientWidth,h=canvas.clientHeight; renderer.setSize(w,h,false); material.uniforms.uAspect.value=w/Math.max(h,1) }

@@ -27,16 +27,16 @@
   opacity: 0.55;
 }
 
-/* 主要動作：硃砂紅，全站只給最重要的按鈕用 */
+/* 主要動作：青藍，全站只給最重要的按鈕用 */
 .primary {
   composes: base;
-  background: var(--c-zhusha);
+  background: var(--c-primary);
   color: #fff;
 }
 
 .primary:hover:not(:disabled),
 .primary:active:not(:disabled) {
-  background: var(--c-zhusha-deep);
+  background: var(--c-primary-deep);
   text-decoration: none;
 }
 

@@ -6,8 +6,6 @@ export const CATEGORIES = [
   { value: 'other', label: '其他' },
 ]
 
-export const CATEGORY_VALUES = CATEGORIES.map((c) => c.value)
-
 export function categoryLabel(value) {
   return CATEGORIES.find((c) => c.value === value)?.label ?? '其他'
 }

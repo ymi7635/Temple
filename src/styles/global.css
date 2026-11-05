@@ -21,8 +21,8 @@ html {
 
 body {
   margin: 0;
-  background: var(--c-baiyi);
-  color: var(--c-zizhu);
+  background: var(--c-paper);
+  color: var(--c-ink);
   font-family: var(--font-sans);
   font-size: var(--step-0);
   line-height: 1.8;
@@ -55,7 +55,7 @@ img {
 }
 
 a {
-  color: var(--c-jingping);
+  color: var(--c-primary);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.22em;
 }
@@ -74,26 +74,8 @@ textarea {
 
 /* 鍵盤操作時看得到焦點 */
 :focus-visible {
-  outline: 3px solid var(--c-jingping);
+  outline: 3px solid var(--c-focus);
   outline-offset: 3px;
-}
-
-.on-dark :focus-visible,
-.on-dark:focus-visible {
-  outline-color: var(--c-jingping-pale);
-}
-
-/* 只給螢幕閱讀器讀的文字 */
-.visually-hidden {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 /* 使用者在系統設定「減少動態效果」時，關閉轉場與動畫 */
@@ -105,10 +87,4 @@ textarea {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-.page-loading {
-  padding: var(--s-6) var(--gutter);
-  text-align: center;
-  color: var(--c-ink-soft);
 }

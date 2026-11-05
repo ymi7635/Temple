@@ -1,50 +1,45 @@
 /*
  * 設計變數（design tokens）：全站的顏色、字型、字級、間距都從這裡取用。
- * 色彩取自觀音意象，並延續現有官網的品牌色。對比度已用 WCAG 公式驗證。
+ * 配色：淡藍色系（深靛＋淡藍），呼應觀音道場的清淨與蓮花池水。
+ * 文字與背景的對比度已用 WCAG 公式驗算（一般文字 ≥ 4.5）。
+ * 例外：香身木色與香頭火光保留暖色，寫在 temple.css／incense.css。
  */
 :root {
-  /* ── 主色 ── */
-  --c-zizhu: #171411; /* 紫竹：觀音道場紫竹林。深色底、淺底上的內文 */
-  --c-baiyi: #f5f0e7; /* 白衣：白衣大士。偏冷的瓷白，內容區底色 */
-  --c-jingping: #852f2a; /* 淨瓶青：淨瓶青瓷與甘露水色。連結、路線 */
-  --c-bian: #715633; /* 匾額褐：沿用現有官網最常用的顏色。標題 */
-  --c-zhusha: #852f2a; /* 硃砂：印章與香火。只用在主要按鈕 */
+  /* ── 深色：導覽列、首屏、頁尾、開場 ── */
+  --c-ink: #12263a; /* 深靛：深色區底色、淺底上的主要文字 */
+  --c-ink-2: #1a3149; /* 深靛次層：手機版展開選單 */
 
-  /* ── 衍生色 ── */
-  --c-ink-soft: #6e6357; /* 淺底上的次要文字 */
-  --c-zizhu-deep: #211c17; /* 水面 */
-  --c-baiyi-dim: #d6cbbd; /* 深底上的次要文字 */
-  --c-jingping-pale: #c4a36a; /* 深底上的楊柳、水波、焦點框 */
-  --c-zhusha-deep: #8a2716; /* 主要按鈕滑過、按下 */
-  --c-surface: #fffaf2; /* 提示框、表單底色 */
-  --c-field-border: #988878; /* 輸入框邊線 */
-  --c-rule: rgb(59 47 69 / 0.14); /* 淺底分隔線 */
-  --c-rule-dark: rgb(242 243 239 / 0.22); /* 深底分隔線 */
+  /* ── 淺色：內容區 ── */
+  --c-paper: #f3f8fc; /* 淡藍白：內容底色、深底上的文字 */
+  --c-paper-2: #e3eef7; /* 淡藍：活動公告區、提示框 */
+  --c-paper-3: #d6e6f2; /* 淡藍深一階：圖片佔位底色、浮水印字 */
+
+  /* ── 主色與點綴 ── */
+  --c-primary: #2d5f8a; /* 青藍：參香查詢區、章節號、選中狀態、主要按鈕 */
+  --c-primary-deep: #1f4a6e; /* 青藍深：按鈕滑過、頁面標題 */
+  --c-on-primary: #dceaf5; /* 青藍底上的文字 */
+  --c-accent: #9cc6e4; /* 天藍：深底上的導覽滑過、印章框、小標、蓮花 */
+
+  /* ── 次要文字與線條 ── */
+  --c-muted: #50677d; /* 淺底上的次要文字 */
+  --c-muted-on-dark: #a9bfd3; /* 深底上的次要文字 */
+  --c-line: #c9dae8; /* 淺底分隔線 */
+  --c-line-strong: #6a8fb0; /* 淺底上較明顯的底線 */
+  --c-focus: #4e8fc6; /* 鍵盤焦點框：深、淺底都看得到 */
 
   /* ── 字型 ── */
   --font-serif: 'Noto Serif TC', 'Songti TC', 'PMingLiU', serif;
   --font-sans: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
 
-  /* ── 字級：根字級 18px（見 global.css），比例 1.25 ── */
-  --step--1: 0.875rem; /* 約 16px */
+  /* ── 字級：根字級 18px（見 global.css） ── */
   --step-0: 1rem; /* 18px 內文 */
-  --step-1: 1.25rem; /* 22.5px */
-  --step-2: 1.5625rem; /* 28px */
   --step-3: 1.953rem; /* 35px */
-  --step-4: 2.441rem; /* 44px */
 
   /* ── 間距 ── */
-  --s-1: 0.5rem;
-  --s-2: 1rem;
   --s-3: 1.5rem;
-  --s-4: 2rem;
-  --s-5: 3rem;
-  --s-6: 4.5rem;
   --s-7: 6rem;
 
   /* ── 版面 ── */
-  --header-h: 3.75rem;
-  --page-max: 66rem;
   --text-max: 34rem; /* 約 34 個中文字一行 */
   --gutter: clamp(1.125rem, 4vw, 2rem);
   --radius: 4px;
